@@ -1,0 +1,40 @@
+@use 'mixin' as mixin;
+
+@import 'font';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    height: 100vh;
+    @include mixin.layout(flex, column, space-between,0);
+}
+
+.headerTitle{
+    margin-top: 40%;
+    width: 30%;
+    align-self: center
+}
+
+.headerTitle p{
+    @include mixin.font(#FFF, center, "Inter", 0.75rem, normal, 700, 80%, uppercase)
+}
+
+.headerTitle h4{
+    @include mixin.font(#FFF, center, "Inter", 4rem, normal, 700, 80%, uppercase)
+}
+
+.headerButton{
+    @include mixin.layout(flex, inline, space-between, center);
+    justify-self: flex-end
+}
+
+.headerButton a{
+    @include mixin.font(#FFF, center, "Work Sans", 1.25rem, normal, 400, 110.76%, none);
+    border: 1px solid #AAA;
+}
+

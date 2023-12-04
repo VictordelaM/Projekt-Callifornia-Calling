@@ -1,0 +1,18 @@
+@mixin layout($display, $direktion, $justify, $align ){
+    display: $display;
+    flex-direction: $direktion;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin font($color, $text-align, $familiy, $size, $style, $weight, $line-height, $transform){
+    color: $color;
+    text-align: $text-align;
+    font-family: $familiy;
+    font-size: $size;
+    font-style: $style;
+    font-weight: $weight;
+    line-height: $line-height;
+    text-transform: $transform;
+}
+
