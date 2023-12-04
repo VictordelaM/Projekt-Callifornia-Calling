@@ -15,9 +15,12 @@ header{
 }
 
 .headerTitle{
-    margin-top: 40%;
+    margin-top: 20%;
     width: 30%;
-    align-self: center
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
 }
 
 .headerTitle p{
@@ -36,5 +39,17 @@ header{
 .headerButton a{
     @include mixin.font(#FFF, center, "Work Sans", 1.25rem, normal, 400, 110.76%, none);
     border: 1px solid #AAA;
+    text-decoration: none;
+    padding: 1%;
 }
 
+.intro{
+    height: 200vh;
+    background-color: black;
+}
+
+.intro h1{
+    @include mixin.font(#FFF, 0, "Inter", 5.859375rem, normal, 700, 115.867%, none);
+    width: 70%;
+    margin-left: 10%;
+}
