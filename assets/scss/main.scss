@@ -142,7 +142,60 @@ header{
     z-index: -1;
 }
 
-
 .goldenBear{
     background-color: black;
+    @include mixin.layout(flex, column, center, center)
+}
+
+.goldenBox{
+    @include mixin.layout(flex, 0, space-between, center)
+}
+
+.goldenTitle{
+    @include mixin.layout(flex, column, 0, 0);
+    gap: 2.5vh;
+}
+
+.goldenTitle p, .goldenText p:last-of-type{
+    @include mixin.font(#FFF, 0, "Work Sans", 1.125rem, 0, 400, 160%, 0)
+}
+
+.goldenTitle h3{
+    @include mixin.font(#FFF, 0, "Inter", 5.2239375rem, 0, 700, 0, 0)
+}
+
+.goldenText{
+    @include mixin.layout(flex, column, 0, 0);
+    gap: 2.5vh;
+}
+
+.goldenText p:first-of-type{
+    @include mixin.font(#FFF, 0, "Inter", 1.8104375rem, 0, 700, 113.636%, 0)
+}
+
+.goldenBoxImg{
+    position: relative;
+}
+
+.goldenBoxImg img:first-of-type{
+    position: absolute;
+    bottom: -10%;
+    left: 10%;
+}
+
+.goldenBoxImg img:last-of-type{
+    position: absolute;
+    bottom: -5%;
+    right: 25%;
+}
+
+.space{
+    position: relative;
+    height: 50vh;
+}
+
+.space img{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
