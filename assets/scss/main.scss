@@ -199,3 +199,105 @@ header{
     top: 0;
     right: 0;
 }
+
+.poppyBear{
+    background-color: #AAAAAA;
+    @include mixin.layout(flex, column, center, center)
+}
+
+.poppyBox{
+    @include mixin.layout(flex, 0, space-between, center)
+}
+
+.poppyTitle{
+    @include mixin.layout(flex, column, 0, 0);
+    gap: 2.5vh;
+}
+
+.poppyTitle p, .poppyText p:last-of-type{
+    @include mixin.font(#000, 0, "Work Sans", 1.125rem, 0, 400, 160%, 0)
+}
+
+.poppyTitle h3{
+    @include mixin.font(#000, 0, "Inter", 5.2239375rem, 0, 700, 0, 0)
+}
+
+.poppyText{
+    @include mixin.layout(flex, column, 0, 0);
+    gap: 2.5vh;
+}
+
+.poppyText p:first-of-type{
+    @include mixin.font(#000, 0, "Inter", 1.8104375rem, 0, 700, 113.636%, 0)
+}
+
+.poppyBoxImg{
+    position: relative;
+}
+
+.poppyBoxImg img:first-of-type{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+
+.poppyBoxImg img:last-of-type{
+    position: absolute;
+    bottom: 5%;
+    right: 25%;
+    opacity: 0.75;
+}
+
+footer{
+    background-color: #000;
+    @include mixin.layout(flex, column, flex-end, 0);
+    gap: 10vh;
+}
+
+.footerText{
+    @include mixin.layout(flex, column, 0, 0);
+    gap: 5vh;
+}
+
+.footerText a{
+    @include mixin.font(#FFF, center, "Work Sans", 1.25rem, normal, 400, 110.76%, none);
+    border: 1px solid #AAA;
+    text-decoration: none;
+    padding: 1%;
+}
+
+.footerText p:first-of-type{
+    @include mixin.font(#fff, 0, "Work Sans", 0.75rem, 0, 400, 0, 0)
+}
+
+.footerText p:last-of-type{
+    @include mixin.font(#fff, 0, "Inter", 1.5rem, 0, 700, 192.014%, 0)
+}
+
+.down{
+    @include mixin.layout(flex, 0, space-between, 0);
+}
+
+.social{
+    @include mixin.layout(flex, column, 0, 0);
+}
+
+.icons{
+    @include mixin.layout(flex, 0, 0, 0);
+}
+
+.social p{
+    @include mixin.font(#fff, 0, "Work Sans", 0.75rem, 0, 400, 0, 0)
+}
+
+.redCross{
+    @include mixin.layout(flex, 0, 0, 0);
+}
+
+// .empty{
+//     width: 100%;
+//     border: 10vh solid white;
+//     rotate: 45deg;
+//     position: absolute;
+//     top: 0;
+// }
