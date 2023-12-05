@@ -58,6 +58,8 @@ header {
   justify-content: space-between;
   align-items: center;
   justify-self: flex-end;
+  margin: 0 auto 5%;
+  width: 90%;
 }
 
 .headerButton a {
@@ -75,7 +77,6 @@ header {
 }
 
 .intro {
-  height: 200vh;
   background-color: black;
 }
 
@@ -90,6 +91,139 @@ header {
   text-transform: none;
   width: 70%;
   margin-left: 10%;
+}
+
+.introBox {
+  display: flex;
+  flex-direction: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: 0;
+  gap: 2vh;
+  margin-left: 5%;
+}
+
+.numbers p {
+  color: #FFF;
+  text-align: 0;
+  font-family: "Work Sans";
+  font-size: 0.875rem;
+  font-style: none;
+  font-weight: 400;
+  line-height: 0;
+  text-transform: 0;
+}
+
+.numbers h2 {
+  color: #FFF;
+  text-align: 0;
+  font-family: "Inter";
+  font-size: 5.421875rem;
+  font-style: none;
+  font-weight: 700;
+  line-height: 125.216%;
+  text-transform: 0;
+}
+
+.stuck {
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.stuckText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+}
+
+.stuckTextBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: 0;
+  align-items: 0;
+  gap: 2.5vh;
+}
+
+.stuckTextBox h3 {
+  color: black;
+  text-align: 0;
+  font-family: "Inter";
+  font-size: 5.2239375rem;
+  font-style: 0;
+  font-weight: 700;
+  line-height: 98.455%;
+  text-transform: 0;
+}
+
+.stuckText p {
+  color: black;
+  text-align: 0;
+  font-family: "Work Sans";
+  font-size: 1rem;
+  font-style: 0;
+  font-weight: 400;
+  line-height: 187.5%;
+  text-transform: 0;
+}
+
+.stuck img:nth-of-type(1) {
+  position: absolute;
+  top: -5%;
+  right: 10%;
+}
+
+.stuck img:nth-of-type(2) {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.stuck img:nth-of-type(3) {
+  position: absolute;
+  top: 35%;
+  right: 0;
+}
+
+.stuck img:nth-of-type(4) {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+}
+
+.stuck img:nth-of-type(5) {
+  position: absolute;
+  top: 60%;
+  right: 5%;
+}
+
+.stuck img:nth-of-type(6) {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
+
+.stuck img:nth-of-type(7) {
+  position: absolute;
+  bottom: -5%;
+  right: 10%;
+  z-index: -1;
+}
+
+.goldenBear {
+  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

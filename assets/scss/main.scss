@@ -33,7 +33,9 @@ header{
 
 .headerButton{
     @include mixin.layout(flex, inline, space-between, center);
-    justify-self: flex-end
+    justify-self: flex-end;
+    margin:0 auto 5%;
+    width: 90%;
 }
 
 .headerButton a{
@@ -44,7 +46,7 @@ header{
 }
 
 .intro{
-    height: 200vh;
+    // height: 200vh;
     background-color: black;
 }
 
@@ -52,4 +54,95 @@ header{
     @include mixin.font(#FFF, 0, "Inter", 5.859375rem, normal, 700, 115.867%, none);
     width: 70%;
     margin-left: 10%;
+}
+
+.introBox{
+    @include mixin.layout(flex, 0, space-between, center);
+}
+
+.numbers{
+    @include mixin.layout(flex, column, space-between, 0);
+    gap: 2vh;
+    margin-left: 5%;
+}
+
+.numbers p{
+    @include mixin.font(#FFF, 0, "Work Sans", 0.875rem, none, 400, 0, 0)
+}
+
+.numbers h2{
+    @include mixin.font(#FFF, 0, "Inter", 5.421875rem, none, 700, 125.216%, 0)
+}
+
+.stuck{
+    height: 150vh;
+    @include mixin.layout(flex, column, space-around, center);
+    position: relative;
+}
+
+.stuckText{
+    @include mixin.layout(flex, column, space-around, center);
+    width: 25%;
+    height: 100%;
+}
+
+.stuckTextBox{
+    @include mixin.layout(flex, column, 0, 0);
+    gap: 2.5vh;
+}
+
+.stuckTextBox h3{
+    @include mixin.font(black, 0,"Inter" , 5.2239375rem, 0, 700, 98.455%, 0)
+}
+
+.stuckText p{
+    @include mixin.font(black, 0,"Work Sans" , 1rem, 0, 400, 187.5%, 0)
+}
+
+.stuck img:nth-of-type(1){
+    position: absolute;
+    top: -5%;
+    right: 10%;
+}
+
+.stuck img:nth-of-type(2){
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.stuck img:nth-of-type(3){
+    position: absolute;
+    top: 35%;
+    right: 0;
+}
+
+.stuck img:nth-of-type(4){
+    position: absolute;
+    top:50%;
+    left: 15%;
+}
+
+.stuck img:nth-of-type(5){
+    position: absolute;
+    top: 60%;
+    right: 5%;
+}
+
+.stuck img:nth-of-type(6){
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+
+.stuck img:nth-of-type(7){
+    position: absolute;
+    bottom: -5%;
+    right: 10%;
+    z-index: -1;
+}
+
+
+.goldenBear{
+    background-color: black;
 }
